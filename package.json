@@ -8,7 +8,7 @@
     "frontend": "cd frontend && npm run dev",
     "debug": "concurrently \"npm run backend\" \"npm run frontend\"",
     "start": "cross-env NODE_ENV=production node backend/server.js",
-    "build_backend": "npm run build --prefix frontend",
+    "build_frontend": "npm run build --prefix frontend",
     "build_all": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "type": "module",
@@ -18,7 +18,7 @@
   "dependencies": {
     "cross-env": "^10.0.0",
     "dotenv": "^17.2.2",
-    "express": "^4.21.2",
+    "express": "^5.1.0",
     "mongoose": "^8.18.0"
   },
   "devDependencies": {
